@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
 html, body{
   height: 100%;
   width: 100%;
@@ -54,23 +55,95 @@ html, body{
 .padding{
   padding-bottom: 2rem;
 }
-.welcome{
+.cen{
   width: 75%;
   margin: 0 auto;
   padding-top: 2rem;
 }
-.welcome hr{
-  border-top: 2px solid #b4b4b4;
-  width: 95%;
+.horz{
+  border-top: 2px solid #333;
+  width: 40%;
   margin-top: .3rem;
   margin-bottom: 1rem;
 }
-
-.card img{
-  height: 400px;
+.cen .content{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-.card h1{
-  font-size: 200%;
+
+.card{
+  position: relative;
+  background-color: #262626;
+  overflow: hidden;
+}
+
+.image_card{
+    top: 0px;
+    left: 0px;
+    position: relative;
+    width: 560px;
+}
+
+.col-center {
+  margin: 0 auto;
+  float: none !important;
+}
+
+
+.item {
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.item img{
+  width: 225px;
+  height: 225px;
+  margin: auto;
+  padding-bottom: 8px;
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.box{
+  position: relative;
+  background: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.box img{
+  margin: 1rem auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.box .box-content {
+  padding: 15px;
+}
+
+.box .box-content h1{
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  padding-bottom: 8px;
+}
+
+
+.box .box-content a{
+  font-size: 16px;
+  color: #FFFFFF;
 }
 
 .fa-code{
@@ -86,18 +159,6 @@ html, body{
   font-size: 4em;
   margin: 1rem;
 }
-/*
-.fun{
-  width: 100%;
-  margin-bottom: 2rem;
-}
-.gif{
-  max-width: 100%;
-}
-.card img{
-  max-width: 100%;
-  max-height: 100%;
-} */
 
 
 body nav a h3{
@@ -112,6 +173,9 @@ footer h3{
 footer h3 span, body nav a h3 span{
   color: crimson;
   font-weight: 700;
+}
+.social ul{
+  -webkit-padding-start: 0;
 }
 
 .social li{
@@ -217,6 +281,10 @@ hr.light-bottm{
     font-size: 95%;
     padding: 8px 14px;
   }
+  .box img{
+    width: 180px;
+    height: 180px;
+  }
 
   .display-4{
     font-size: 200%;
@@ -248,6 +316,12 @@ hr.light-bottm{
     font-size: 90%;
     padding: 4px 8px;
   }
+
+
+  .box img{
+    width: 160px;
+    height: 160px;
+  }
   .display-4{
     font-size: 160%;
   }
@@ -267,57 +341,9 @@ hr.light-bottm{
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
 }
-/*--- Fixed Background Image --*/
-figure {
-  position: relative;
-  width: 100%;
-  height: 60%;
-  margin: 0!important;
-}
-.fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#fixed {
-  background-image: url('img/mac.png');
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
-}
+
+
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 1rem;
 }
-
-
-
-
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
